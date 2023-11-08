@@ -55,4 +55,4 @@ smtp_details = {
 
 # Example usage:
 cc_email = "jiraphat120@hotmail.com"
-send_email_with_attachments("Result Files Attached", "Please find the attached CSV files.", "{{RECEIVER}}", file_paths, smtp_details)
+send_email_with_attachments("Result Files Attached", "Please find the attached CSV files.", "{{RECEIVER}}", cc_email, file_paths, smtp_details)
