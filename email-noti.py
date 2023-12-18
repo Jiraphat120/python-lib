@@ -54,11 +54,10 @@ smtp_details = {
 
 send_email_with_attachments(
     "Scan Result", 
-    "jiraphat.g@got.co.th",
+    "jiraphat.g@got.co.th, {{RECEIVER}}",
     ["jiraphat120@hotmail.com", "jiraphat.g@got.co.th"],
     # "itinfra@tlt.co.th",
     # ["pradist_k@tlt.co.th", "kijnipat_s@tlt.co.th", "kalunyu_s@tlt.co.th", "phornmesa_k@tlt.co.th", "jitrada_b@tlt.co.th", "jiraphat.g@got.co.th"], 
-    "{{RECEIVER}}",
     file_paths, 
     smtp_details
 )
