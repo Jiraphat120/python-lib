@@ -45,14 +45,20 @@ file_paths = [
 ]
 
 smtp_details = {
-    'email': '{{SMTP_USER}}',
-    'password': '{{SMTP_PASSWORD}}',
+    'email': 'gotnotify@got.co.th',
+    'password': 'fnGh%LS*F9F9QH',
     'server': 'smtp.office365.com',
     'port': 587,   # Often 587 for TLS or 465 for SSL
     'use_tls': True  # Set this to False if you don't want to use starttls
 }
 
-
-# Example usage:
-cc_email = "kijnipsr@tlt.co.th"
-send_email_with_attachments("Result Files Attached", "Please find the attached CSV files.", "{{RECEIVER}}", cc_email, file_paths, smtp_details)
+send_email_with_attachments(
+    "Scan Result", 
+    "jiraphat.g@got.co.th",
+    ["jiraphat120@hotmail.com", "jiraphat.g@got.co.th"],
+    # "itinfra@tlt.co.th",
+    # ["pradist_k@tlt.co.th", "kijnipat_s@tlt.co.th", "kalunyu_s@tlt.co.th", "phornmesa_k@tlt.co.th", "jitrada_b@tlt.co.th", "jiraphat.g@got.co.th"], 
+    "{{RECEIVER}}",
+    file_paths, 
+    smtp_details
+)
