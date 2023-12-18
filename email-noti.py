@@ -41,7 +41,7 @@ def send_email_with_attachments(subject, body, to_email, cc_emails, file_paths, 
 # File paths of the CSVs
 
 file_paths = [
-    "SASTreports.pdf"
+    "SASTreports"
 ]
 
 smtp_details = {
@@ -53,8 +53,8 @@ smtp_details = {
 }
 
 send_email_with_attachments(
-    "Scan Result",
-    "{{CI_PROJECT_NAME}} Report",
+    "Checkmarx Scan Result",
+    "{{CI_PROJECT_NAME}}",
     "{{RECEIVER}}",
     ["jiraphat120@hotmail.com", "jiraphat.g@got.co.th"],
     # "itinfra@tlt.co.th",
