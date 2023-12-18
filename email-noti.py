@@ -4,7 +4,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 
-def send_email_with_attachments(subject, body, to_email, cc_email, file_paths, smtp_details):
+def send_email_with_attachments(subject, body, to_email, cc_emails, file_paths, smtp_details):
     from_email = smtp_details['email']
     from_password = smtp_details['password']
     smtp_server = smtp_details['server']
@@ -14,7 +14,7 @@ def send_email_with_attachments(subject, body, to_email, cc_email, file_paths, s
     msg = MIMEMultipart()
     msg['From'] = from_email
     msg['To'] = to_email
-    msg['Cc'] = cc_email
+    msg['CC'] = ', '.join(cc_emails)  # Join multiple CC emails with a comma
     msg['Subject'] = subject
 
     msg.attach(MIMEText(body, 'plain'))
