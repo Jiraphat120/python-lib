@@ -53,7 +53,8 @@ smtp_details = {
 }
 
 send_email_with_attachments(
-    "Scan Result", 
+    "Scan Result",
+    "Please Check scan report",
     "{{RECEIVER}}",
     ["jiraphat120@hotmail.com", "jiraphat.g@got.co.th"],
     # "itinfra@tlt.co.th",
