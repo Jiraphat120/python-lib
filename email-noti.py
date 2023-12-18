@@ -54,7 +54,7 @@ smtp_details = {
 
 send_email_with_attachments(
     "Scan Result",
-    "Please Check scan report",
+    "{{CI_PROJECT_NAME}} Report",
     "{{RECEIVER}}",
     ["jiraphat120@hotmail.com", "jiraphat.g@got.co.th"],
     # "itinfra@tlt.co.th",
