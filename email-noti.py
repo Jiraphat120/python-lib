@@ -41,7 +41,7 @@ def send_email_with_attachments(subject, body, to_email, cc_emails, file_paths, 
 # File paths of the CSVs
 
 file_paths = [
-    "SASTreports"
+    "SASTreports.pdf"
 ]
 
 smtp_details = {
