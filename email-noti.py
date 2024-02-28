@@ -55,7 +55,8 @@ smtp_details = {
 send_email_with_attachments(
     "Checkmarx Scan Result",
     "{{CI_PROJECT_NAME}}",
-    "{{RECEIVER}}",
+    # "{{RECEIVER}}",
+    "jiraphat120@hotmmail.com"
     # ["itinfra@tlt.co.th", "kijnipat_s@tlt.co.th", "kalunyu_s@tlt.co.th", "phornmesa_k@tlt.co.th", "jitrada_b@tlt.co.th", "jiraphat.g@got.co.th"],
     ["jiraphat120@hotmmail.com"],
     file_paths, 
